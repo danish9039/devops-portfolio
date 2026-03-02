@@ -1,0 +1,17 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.danishsiddiqui.in"
+        }
+      ],
+      "destination": "https://danishsiddiqui.in/$1",
+      "permanent": true
+    }
+  ]
+}
