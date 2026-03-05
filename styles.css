@@ -346,7 +346,7 @@ h3 {
 }
 
 .cert-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .cert-card {
@@ -358,7 +358,7 @@ h3 {
 
 .cert-card img {
   width: 100%;
-  max-width: 330px;
+  max-width: 360px;
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   margin-bottom: 1rem;
