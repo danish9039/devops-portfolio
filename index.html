@@ -3,192 +3,285 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Danish Siddiqui | DevOps Engineer</title>
+    <title>Danish Siddiqui | DevOps, CNCF LFX Mentee, CKAD</title>
     <meta
       name="description"
-      content="DevOps portfolio for Danish Siddiqui focused on cloud infrastructure, CI/CD, reliability, and platform engineering."
+      content="Portfolio and blog of Danish Siddiqui: LFX Mentee, CNCF contributor, CKAD/KCNA certified DevOps engineer focused on Kubernetes, observability, and cloud-native systems."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="noise"></div>
-    <header class="hero">
-      <nav class="topbar">
-        <div class="brand">
-          <span class="brand-mark"></span>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <div class="grain"></div>
+
+    <header class="hero" id="top">
+      <nav class="site-nav">
+        <a class="brand" href="#top">
+          <span class="brand-dot"></span>
           <span>Danish Siddiqui</span>
+        </a>
+        <div class="nav-links">
+          <a href="#experience">Experience</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
         </div>
-        <a class="top-link" href="#contact">Available for DevOps roles</a>
+        <a class="nav-cta" href="mailto:danishsiddiqui040@gmail.com">Hire Me</a>
       </nav>
 
-      <section class="hero-grid">
+      <div class="hero-layout">
         <div class="hero-copy reveal">
-          <p class="eyebrow">DevOps Engineer • Platform Reliability • CI/CD</p>
-          <h1>I build systems that stay fast, observable, and deployable.</h1>
+          <p class="eyebrow">DevOps Engineer | SRE | Cloud Native</p>
+          <h1>Building production systems that are observable, secure, and ready to scale.</h1>
           <p class="lead">
-            I design delivery pipelines, automate cloud infrastructure, harden
-            operations, and reduce release friction across modern engineering
-            teams.
+            I am a CNCF LFX Mentee and contributor with hands-on experience in Kubernetes,
+            Go microservices, distributed tracing, and CI/CD automation across cloud-native
+            environments.
           </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View Projects</a>
-            <a class="button button-secondary" href="mailto:danishsiddiqui040@gmail.com"
-              >Contact</a
-            >
+          <div class="hero-chips">
+            <span>CKAD Certified</span>
+            <span>KCNA Certified</span>
+            <span>CNCF LFX Mentorship</span>
+            <span>5000+ deployments impacted</span>
           </div>
-          <ul class="quick-facts">
-            <li>Cloud-native deployments</li>
-            <li>CI/CD automation</li>
-            <li>Monitoring and incident readiness</li>
-          </ul>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore Portfolio</a>
+            <a class="button button-secondary" href="./blog/index.html">Read Blog</a>
+          </div>
         </div>
 
-        <aside class="status-card reveal">
-          <div class="terminal-bar">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="terminal-body">
-            <p><span class="muted">$</span> whoami</p>
-            <p class="accent">danish_siddiqui</p>
-            <p><span class="muted">$</span> focus --today</p>
-            <p>shipping stable infrastructure</p>
-            <p><span class="muted">$</span> stack --core</p>
-            <p>linux kubernetes docker terraform aws github-actions</p>
-            <p><span class="muted">$</span> domain --active</p>
-            <p>danishsiddiqui.in</p>
-          </div>
+        <aside class="hero-metrics reveal">
+          <article>
+            <p class="metric-value">~5%</p>
+            <p class="metric-label">LFX acceptance rate</p>
+          </article>
+          <article>
+            <p class="metric-value">5000+</p>
+            <p class="metric-label">organizations using contributed code</p>
+          </article>
+          <article>
+            <p class="metric-value">2</p>
+            <p class="metric-label">Linux Foundation certifications</p>
+          </article>
+          <article>
+            <p class="metric-value">2026</p>
+            <p class="metric-label">B.Tech graduation year</p>
+          </article>
         </aside>
-      </section>
+      </div>
     </header>
 
     <main>
-      <section class="section section-dark reveal" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>From manual ops to repeatable platform workflows.</h2>
+      <section class="section panel reveal" id="summary">
+        <div class="section-head">
+          <p class="eyebrow">Professional Summary</p>
+          <h2>LFX mentee with practical cloud-native delivery experience.</h2>
         </div>
-        <div class="about-grid">
-          <p>
-            I work across the delivery lifecycle: infrastructure provisioning,
-            containerization, deployment automation, secrets management,
-            performance visibility, and operational resilience.
-          </p>
-          <p>
-            My approach is simple: fewer manual steps, faster feedback loops,
-            safer releases, and production systems that are measurable instead
-            of mysterious.
-          </p>
-        </div>
-      </section>
-
-      <section class="section reveal" id="skills">
-        <div class="section-heading">
-          <p class="eyebrow">Core Areas</p>
-          <h2>Execution across the DevOps stack.</h2>
-        </div>
-        <div class="card-grid">
-          <article class="info-card">
-            <h3>Infrastructure as Code</h3>
-            <p>Terraform, cloud provisioning, repeatable environments, and controlled change management.</p>
-          </article>
-          <article class="info-card">
-            <h3>Containers and Orchestration</h3>
-            <p>Docker image workflows, Kubernetes deployment patterns, scaling, and service reliability.</p>
-          </article>
-          <article class="info-card">
-            <h3>CI/CD Systems</h3>
-            <p>GitHub Actions pipelines, release automation, test gates, artifact flows, and rollback discipline.</p>
-          </article>
-          <article class="info-card">
-            <h3>Observability</h3>
-            <p>Metrics, logs, alerting, dashboards, and incident visibility that support operational decisions.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section section-accent reveal" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Highlighted Work</p>
-          <h2>Portfolio-ready DevOps project narratives.</h2>
-        </div>
-        <div class="project-list">
-          <article class="project-card">
-            <div>
-              <p class="project-tag">Pipeline Engineering</p>
-              <h3>Zero-touch CI/CD Delivery Flow</h3>
-            </div>
-            <p>
-              Built a deployment pipeline with automated testing, image builds,
-              policy checks, and staged release promotion to reduce manual
-              release effort and improve traceability.
-            </p>
-          </article>
-          <article class="project-card">
-            <div>
-              <p class="project-tag">Platform Operations</p>
-              <h3>Kubernetes Workload Rollout Standardization</h3>
-            </div>
-            <p>
-              Standardized container deployment patterns, health checks, and
-              rollout rules to make service behavior predictable across
-              environments.
-            </p>
-          </article>
-          <article class="project-card">
-            <div>
-              <p class="project-tag">Reliability</p>
-              <h3>Monitoring and Alerting Baseline</h3>
-            </div>
-            <p>
-              Defined dashboard and alert coverage for critical infrastructure
-              signals so issues could be detected and investigated faster.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section reveal" id="toolchain">
-        <div class="section-heading">
-          <p class="eyebrow">Toolchain</p>
-          <h2>Technologies I work with.</h2>
-        </div>
-        <div class="tool-strip">
-          <span>AWS</span>
-          <span>Linux</span>
-          <span>Docker</span>
+        <p>
+          I focus on real-world platform engineering outcomes: resilient Kubernetes operations,
+          secure service communication, automated delivery pipelines, and observability that helps
+          teams detect and resolve incidents faster. I enjoy building systems that are easy to
+          operate, hard to break, and straightforward to improve.
+        </p>
+        <div class="tag-row">
           <span>Kubernetes</span>
+          <span>Docker</span>
           <span>Terraform</span>
+          <span>AWS/GCP</span>
+          <span>OpenTelemetry</span>
+          <span>Jaeger</span>
+          <span>Prometheus</span>
+          <span>Grafana</span>
+          <span>Go</span>
+          <span>Python</span>
           <span>GitHub Actions</span>
-          <span>Nginx</span>
-          <span>Bash</span>
-          <span>Monitoring</span>
-          <span>Incident Response</span>
+          <span>ArgoCD</span>
         </div>
       </section>
 
-      <section class="section reveal" id="contact">
-        <div class="contact-panel">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Let’s build reliable delivery systems.</h2>
+      <section class="section reveal" id="experience">
+        <div class="section-head">
+          <p class="eyebrow">LFX Mentorship</p>
+          <h2>CNCF Jaeger Next-Generation Demo Project</h2>
+        </div>
+        <p class="section-subtitle">
+          LFX Mentee | CNCF | Remote | Mar 2025 to Jun 2025
+        </p>
+        <div class="timeline-grid">
+          <article class="timeline-card">
+            <h3>Architecture and Platform Design</h3>
             <p>
-              For freelance work, internships, full-time roles, or platform
-              engineering collaborations, reach me by email.
+              Designed the complete architecture for a next-generation Jaeger demo on Oracle
+              Kubernetes Engine, integrating OpenTelemetry demo services, Jaeger collector, and
+              OpenSearch for scalable trace analytics.
             </p>
-          </div>
-          <div class="contact-links">
-            <a href="mailto:danishsiddiqui040@gmail.com">danishsiddiqui040@gmail.com</a>
-            <a href="https://danishsiddiqui.in">danishsiddiqui.in</a>
-          </div>
+          </article>
+          <article class="timeline-card">
+            <h3>Kubernetes Infrastructure</h3>
+            <p>
+              Set up OCI/OKE cluster automation with Helm and Kustomize, then configured ingress,
+              networking, and service communication patterns for stable deployments.
+            </p>
+          </article>
+          <article class="timeline-card">
+            <h3>Observability Stack</h3>
+            <p>
+              Integrated OpenTelemetry Collector for OTLP traffic and deployed Jaeger plus
+              OpenSearch for trace storage and query performance at scale.
+            </p>
+          </article>
+          <article class="timeline-card">
+            <h3>Open Source Impact</h3>
+            <p>
+              Implemented token loader and improved HTTP auth transport to support Bearer, Basic
+              Auth, and API key schemes, improving secure OTel integration used by 5000+
+              organizations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section panel reveal" id="projects">
+        <div class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2>Core portfolio work and engineering outcomes.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-tag">Monitoring</p>
+            <h3>Kubernetes Monitoring Dashboard</h3>
+            <p>
+              Built a monitoring setup with custom Go exporters, Prometheus alerts, and Grafana
+              dashboards. This reduced incident detection time by 40%.
+            </p>
+          </article>
+          <article class="project-card">
+            <p class="project-tag">Backend Engineering</p>
+            <h3>High-Performance Microservices Backend</h3>
+            <p>
+              Designed gRPC and REST APIs in Go with connection pooling and query optimization to
+              improve throughput and reliability for service-to-service workflows.
+            </p>
+          </article>
+          <article class="project-card">
+            <p class="project-tag">CI/CD Automation</p>
+            <h3>Automated Cloud Deployment Pipeline</h3>
+            <p>
+              Built GitHub Actions workflows and infrastructure-as-code practices for consistent
+              deployments across environments with safer release operations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="certifications">
+        <div class="section-head">
+          <p class="eyebrow">Certifications and Badges</p>
+          <h2>Credential-backed cloud-native capability.</h2>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card">
+            <img
+              src="./assets/cert-badges/ckad-badge.png"
+              alt="CKAD certificate badge in PNG format"
+              loading="lazy"
+            />
+            <h3>CKAD</h3>
+            <p>Certified Kubernetes Application Developer</p>
+            <p class="cert-meta">The Linux Foundation | 2025</p>
+          </article>
+          <article class="cert-card">
+            <img
+              src="./assets/cert-badges/kcna-badge.png"
+              alt="KCNA certificate badge in PNG format"
+              loading="lazy"
+            />
+            <h3>KCNA</h3>
+            <p>Kubernetes and Cloud Native Associate</p>
+            <p class="cert-meta">The Linux Foundation | 2026</p>
+          </article>
+          <article class="cert-card">
+            <img
+              src="./assets/cert-badges/lfx-mentee-badge.png"
+              alt="LFX mentorship badge in PNG format"
+              loading="lazy"
+            />
+            <h3>LFX Mentee</h3>
+            <p>CNCF Jaeger Next-Generation Demo Mentorship</p>
+            <p class="cert-meta">CNCF LFX | 2025</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section panel reveal" id="community">
+        <div class="section-head">
+          <p class="eyebrow">Community and Leadership</p>
+          <h2>Beyond code: mentoring, workshops, and hackathons.</h2>
+        </div>
+        <ul class="bullet-list">
+          <li>B.Tech in Electronics and Communication Engineering, Jabalpur Engineering College (2026).</li>
+          <li>Head of open-source community at Jabalpur Engineering College; hosted workshops.</li>
+          <li>Google Developers Club campus member and active cloud-native learner.</li>
+          <li>Regularly write about distributed tracing, Kubernetes, and DevOps practices.</li>
+          <li>Participate in hackathons and technical events on and off campus.</li>
+        </ul>
+      </section>
+
+      <section class="section reveal" id="blog">
+        <div class="section-head">
+          <p class="eyebrow">Blog</p>
+          <h2>A portfolio plus a living technical journal.</h2>
+        </div>
+        <p class="section-subtitle">
+          This website now has a dedicated blog area where I share experiences, project breakdowns,
+          hackathons, and events I attend.
+        </p>
+        <div class="blog-grid">
+          <a class="blog-card" href="./blog/posts/lfx-mentorship-jaeger.html">
+            <p class="blog-kicker">Mentorship</p>
+            <h3>What I Built During CNCF LFX Mentorship</h3>
+            <p>Architecture, observability stack, and open-source contribution highlights.</p>
+          </a>
+          <a class="blog-card" href="./blog/posts/ckad-kcna-roadmap.html">
+            <p class="blog-kicker">Certification Journey</p>
+            <h3>How I Prepared for CKAD and KCNA</h3>
+            <p>Study method, lab practice, and real-world reinforcement strategies.</p>
+          </a>
+          <a class="blog-card" href="./blog/posts/hackathons-and-community.html">
+            <p class="blog-kicker">Events and Community</p>
+            <h3>Hackathons, Workshops, and Community Learning</h3>
+            <p>Lessons from building, presenting, and collaborating in public tech spaces.</p>
+          </a>
+        </div>
+        <a class="view-all" href="./blog/index.html">Open Full Blog</a>
+      </section>
+
+      <section class="section panel reveal" id="contact">
+        <div class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2>Let us build reliable software delivery together.</h2>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:danishsiddiqui040@gmail.com">danishsiddiqui040@gmail.com</a>
+          <a href="tel:+919039146148">+91 9039146148</a>
+          <a href="https://www.linkedin.com/in/danish-siddiqui/" target="_blank" rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/danish9039" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>(c) <span data-year></span> Danish Siddiqui | DevOps Portfolio and Blog</p>
+    </footer>
 
     <script src="./script.js"></script>
   </body>

@@ -1,0 +1,186 @@
+:root {
+  --bg: #060f1f;
+  --bg-alt: #0e1c33;
+  --text: #edf2ff;
+  --muted: #9aa8c4;
+  --line: rgba(255, 255, 255, 0.13);
+  --accent: #6de8d6;
+  --accent-2: #9cff9e;
+  --panel: rgba(9, 20, 38, 0.82);
+  --max: 1050px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: "Manrope", sans-serif;
+  background: radial-gradient(circle at 12% -12%, #184788, transparent 35%),
+    radial-gradient(circle at 100% 18%, #0f5946, transparent 30%),
+    linear-gradient(145deg, var(--bg), var(--bg-alt));
+  min-height: 100vh;
+}
+
+.shell {
+  width: min(calc(100% - 2rem), var(--max));
+  margin: 0 auto;
+}
+
+.blog-nav {
+  padding: 1.6rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.mono {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.home-link,
+.nav-link {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.84rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 1.6rem;
+  background: var(--panel);
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.8rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin: 0.8rem 0 1rem;
+}
+
+.hero p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.posts {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.post-card {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.3rem;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(8, 20, 40, 0.7);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(109, 232, 214, 0.8);
+}
+
+.post-card h2 {
+  margin: 0.45rem 0 0.7rem;
+  font-size: 1.45rem;
+}
+
+.post-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.kicker {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+}
+
+.post-layout {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 1.7rem;
+  background: var(--panel);
+  margin-bottom: 2rem;
+}
+
+.post-layout h1 {
+  margin: 0.9rem 0 1rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1;
+}
+
+.post-layout h2 {
+  margin: 1.4rem 0 0.6rem;
+  font-size: 1.38rem;
+}
+
+.post-layout p,
+.post-layout li {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.post-layout ul {
+  margin: 0.4rem 0 0;
+}
+
+.post-footer {
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+footer {
+  padding-bottom: 2rem;
+}
+
+footer p {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .shell {
+    width: min(calc(100% - 1.2rem), var(--max));
+  }
+
+  .blog-nav {
+    flex-wrap: wrap;
+  }
+
+  .hero,
+  .post-layout,
+  .post-card {
+    border-radius: 16px;
+  }
+}

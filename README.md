@@ -1,13 +1,26 @@
-# Danish Siddiqui DevOps Portfolio
+# Danish Siddiqui DevOps Portfolio and Blog
 
-Static DevOps portfolio site for `danishsiddiqui.in`, designed for deployment on Vercel.
+Static portfolio plus blog site for `danishsiddiqui.in`, designed for deployment on Vercel.
 
-## Files
+## Project Structure
 
-- `index.html`: main portfolio page
-- `styles.css`: visual design and responsive layout
-- `script.js`: section reveal animation
+- `index.html`: main portfolio page (experience, projects, certifications, mentorship, blog preview)
+- `styles.css`: main site visual design and responsive layout
+- `script.js`: reveal animations and footer year script
+- `blog/index.html`: blog home page
+- `blog/posts/*.html`: individual blog posts
+- `blog/styles.css`: blog and blog post styling
+- `assets/cert-badges/*.png`: PNG certificate-style badges (CKAD, KCNA, LFX Mentee)
 - `vercel.json`: Vercel routing and `www` to apex redirect
+
+## Blog Publishing
+
+To add a new post:
+
+1. Create a new file in `blog/posts/`.
+2. Use one of the existing post files as a template.
+3. Add a card link for that post in `blog/index.html`.
+4. Optionally add the new post card in the portfolio blog preview section (`index.html`).
 
 ## Custom Domain Setup
 
