@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DS favicon">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#58e7d1" />
+      <stop offset="100%" stop-color="#89ff8f" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#07101f" />
+  <circle cx="18" cy="18" r="6" fill="url(#g)" />
+  <path
+    d="M17 47V22h11.5c7.3 0 11.5 4.4 11.5 12.3S35.8 47 28.5 47H17Zm7 0h4.1c4.8 0 7.9-2.9 7.9-8.7 0-5.7-3.1-8.6-7.9-8.6H24V47Z"
+    fill="#edf2ff"
+  />
+</svg>
