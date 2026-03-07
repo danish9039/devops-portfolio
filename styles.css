@@ -352,17 +352,73 @@ h3 {
 .cert-card {
   border: 1px solid var(--line);
   border-radius: 20px;
-  padding: 1.3rem;
-  background: rgba(6, 18, 33, 0.66);
+  padding: 1.4rem;
+  background: linear-gradient(180deg, rgba(7, 20, 36, 0.92), rgba(5, 15, 28, 0.78));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
-.cert-card img {
-  width: 100%;
-  max-width: 360px;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+.cert-badge-shell {
+  position: relative;
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  padding: 1.6rem;
+  margin-bottom: 0.95rem;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.14), transparent 52%),
+    linear-gradient(180deg, rgba(32, 54, 98, 0.55), rgba(8, 18, 33, 0.28));
+}
+
+.cert-badge-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.35;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.95), transparent 92%);
+}
+
+.cert-badge-asset {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 240px);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 20px 32px rgba(11, 25, 49, 0.45));
+}
+
+.cert-proof {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.95rem;
   margin-bottom: 1rem;
-  background: #0a1424;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.cert-proof span {
+  color: #d6e3ff;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.cert-proof a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.cert-proof a:hover {
+  color: var(--accent-2);
 }
 
 .cert-meta {
@@ -479,5 +535,15 @@ h3 {
   .cert-card,
   .blog-card {
     border-radius: 16px;
+  }
+
+  .cert-badge-shell {
+    min-height: 240px;
+    padding: 1.2rem;
+  }
+
+  .cert-proof {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
